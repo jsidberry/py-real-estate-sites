@@ -1,4 +1,23 @@
-.vscode/
 venv/
 .venv/
+# local .terraform directory
+.terraform/*
+# .terraform.lock.hcl
 
+# terraform state files
+*.tfstate
+*.tfstate.*
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# tf varible files, may include sensiftuv data
+*.tfvars
+
+# ignore logs
+crash.log
+
+.DS_Store
+.vscode/
+.aws/
